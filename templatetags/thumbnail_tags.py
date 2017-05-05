@@ -29,7 +29,7 @@ def smart_thumbnail(value, args):
         image_extension = os.path.splitext(value.original_filename)[1].lower()
         if image_extension in thumbnailer_extensions_filter:
             return value.url
-	except Exception as e:
+    except Exception as e:
         raise Exception(e)
 
     try:
